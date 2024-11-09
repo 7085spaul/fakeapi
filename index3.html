@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(220, 235, 16);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: pink;
+            border-radius: 10px;
+        margin: 20px;
+        }
+
+        .item {
+            background-color:rgb(242, 137, 8);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid;
+            font-size: 1.5rem;
+        }
+        .container{
+            display: grid !important;
+            grid-template-columns: repeat(auto-fill,minmax(650px,1fr));
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        img {
+            width: 100px;
+            
+        }
+        #search-input{
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            width: 500px;
+        }
+        #search-button{
+            
+            background-color: rgba(227, 16, 164, 0.902);
+            padding: 10px 20px;
+            color: rgb(194, 16, 248);
+            border: none;
+            font-size: 18px;
+            box-shadow: 0 0 5px rgba(77, 205, 38, 0.5);
+            cursor: pointer;
+            border-radius: 5px;
+            
+        }
+        .container{
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="item">
+    <input type="text" id="search-input" placeholder="Search for images..." />
+    <button id="search-button">filter</button>
+</div>
+    
+    <div class="container">
+
+    </div>
+    <script src="./scriptes.js"></script>
+</body>
+
+</html>
